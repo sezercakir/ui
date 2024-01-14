@@ -1,0 +1,24 @@
+/* TextInput.css */
+
+/* Common styles */
+input {
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  /* Outlined variant styles */
+  .input-outlined {
+    border: 1px solid #6366F1;
+    background-color: #FAFAFA;
+    color: #6366F1;
+    padding: 8px;
+  }
+  
+  /* Filled variant styles (default) */
+  .input-filled {
+    background-color: #FAFAFA;
+    color: #6366F1;
+    padding: 8px;
+  }
+  
