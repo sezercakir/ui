@@ -1,6 +1,6 @@
 {
   "name": "@sezercakir/ui",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "author": "Nicholas De Raj",
   "description": "A personalised UI Library.",
   "license": "MIT",
@@ -17,15 +17,7 @@
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/nickderaj"
-  },
-  "jest": {
-    "testEnvironment": "jsdom",
-    "moduleNameMapper": {
-      "\\.(css|less)$": "<rootDir>/src/tests/styleMock.ts"
-    }
-  },
+  
   "babel": {
     "sourceType": "unambiguous",
     "presets": [

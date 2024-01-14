@@ -33,7 +33,10 @@ export default [
         banner: `'use client';`,
       },
     ],
-    plugins: commonPlugins,
+    plugins: [
+      ...commonPlugins,
+      dts({ respectExternal: true }), // Use dts plugin directly in plugins array
+    ],
     external: [/node_modules/],
   },
 
@@ -54,7 +57,10 @@ export default [
         banner: `'use client';`,
       },
     ],
-    plugins: commonPlugins,
+    plugins: [
+      ...commonPlugins,
+      dts({ respectExternal: true }), // Use dts plugin directly in plugins array
+    ],
     external: [/node_modules/],
   },
 
@@ -75,7 +81,10 @@ export default [
         banner: `'use client';`,
       },
     ],
-    plugins: commonPlugins,
+    plugins: [
+      ...commonPlugins,
+      dts({ respectExternal: true }), // Use dts plugin directly in plugins array
+    ],
     external: [/node_modules/],
   },
 
