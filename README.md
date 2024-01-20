@@ -20,7 +20,7 @@ npm install @yourscope/yourpackagename
 ```
 For my demo implementation 
 ```
-npm install @sezercakir/ui
+npm install @sezercakir/ui 
 ```
 ### Preview 
 Preview during the development
