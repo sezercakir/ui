@@ -1,5 +1,5 @@
 ## Build Your Own UI Components Library 
-Design and define your color palette and implement for your project and achieve perfect integrity on the front. Import each package as seperetly to reducde the bunle size or together like MUI components.
+Design and define your color palette and implement for your project and achieve perfect integrity on the front. Import each package as seperetly to reducde the bunle size or together like **MUI components**.
 Detailed explanation in [here]()
 ### Tech Stack
 - TypeScript
@@ -17,6 +17,10 @@ npm run build
 Change package scope with your or organization name.
 ```
 npm install @yourscope/yourpackagename
+```
+For my demo implementation 
+```
+npm install @sezercakir/ui
 ```
 ### Preview 
 Preview during the development
