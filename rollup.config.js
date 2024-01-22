@@ -4,7 +4,6 @@ import typescript from 'rollup-plugin-typescript2';
 import replace from '@rollup/plugin-replace';
 import { getComponentsFolders } from './scripts/buildUtils.js';
 import generatePackageJson from 'rollup-plugin-generate-package-json';
-import postcss from 'rollup-plugin-postcss';
 import copy from 'rollup-plugin-copy';
 
 const packageJson = require('./package.json');
@@ -43,7 +42,6 @@ function component(commonPlugins, folder) {
     ],
     plugins: [
       ...commonPlugins,
-      postcss({extensions: ['.scss'], extract: `style/${folder}.scss`}),
       generatePackageJson({
         baseContents: {
           name: `${packageJson.name}/${folder}`,
