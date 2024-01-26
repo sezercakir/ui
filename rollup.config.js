@@ -54,9 +54,9 @@ function component(commonPlugins, folder) {
         outputFolder: `dist/${folder}/`
       }),
     ],
-    // Don't bundle node_modules, ../TaiContext and .scss files.
+    // Don't bundle node_modules, ../MyContext and .scss files.
 
-    // Because if relative import ../TaiContext bundles, component cannot share common
+    // Because if relative import ../MyContext bundles, component cannot share common
     // context, they creates new context every time. Main logic is that context shoul provided
     // consumer application and all components subscribe this context and its changes.
     //
@@ -99,7 +99,7 @@ export default [
         ]
       }),
     ],
-    // Also TaiContext must added here, because all library files content bundles inside the 
+    // Also MyContext must added here, because all library files content bundles inside the 
     // index.cjs and index.esm.js and this external ensures stays relative import the same. It prevent 
     // to create new context in the index.js files in the dist/ directory. If this external not added,
     // MyButton from 'mylibrary/MyButton' and {MyButton} from 'mylibrary' subscribe different context. 
